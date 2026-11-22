@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="theme-color" content="#071f2f"/>
+        <meta name="description" content="A personalized wedding invitation from Nidhi and Sagar."/>
+        <title>Nidhi & Sagar — Wedding Invitation</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Italianno&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet"/>
+        <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23071f2f'/%3E%3Cpath d='M32 52C21 43 15 32 19 17c10 1 18 6 23 15 1-7-1-14-5-20 12 7 16 18 11 29-3 7-9 11-16 11Z' fill='none' stroke='%23d9b765' stroke-width='3'/%3E%3Cpath d='M22 20c5 9 9 18 10 32' stroke='%23d9b765' stroke-width='2'/%3E%3C/svg%3E"/>
+        <link rel="stylesheet" href="./styles.css?v=48"/>
+    </head>
+    <body>
+        <main>
+            <section class="welcome" id="welcome" aria-labelledby="welcome-title">
+                <div class="welcome-glow" aria-hidden="true"></div>
+                <header class="envelope-heading">
+                    <p class="eyebrow" data-couple-heading>NIDHI &amp; SAGAR · 13 DECEMBER 2026</p>
+                    <h1 id="welcome-title">
+                        With hearts full of love,<br/>
+                        <em>we invite</em>
+                    </h1>
+                </header>
+                <form class="guest-form envelope-form" id="guest-form" novalidate>
+                    <div class="envelope" id="envelope">
+                        <div class="invitation-slip" aria-hidden="true">
+                            <span>WITH LOVE</span>
+                            <strong data-couple-name>Nidhi &amp; Sagar</strong>
+                            <p>
+                                We heartily invite<br/>
+                                <b id="slip-name">you & your family</b>
+                            </p>
+                        </div>
+                        <img class="envelope-body" src="./assets/bodhi-envelope.png" alt=""/>
+                        <div class="envelope-flap" aria-hidden="true">
+                            <img src="./assets/bodhi-envelope.png" alt=""/>
+                        </div>
+                        <div class="envelope-address">
+                            <label for="guest-name">Especially for</label>
+                            <input id="guest-name" name="guest" type="text" autocomplete="name" maxlength="60" placeholder="Your name" aria-describedby="form-error" required/>
+                            <span>& Family</span>
+                        </div>
+                        <button class="wax-seal" type="submit" aria-label="Open your personalized invitation" title="Open your invitation">
+                            <span class="seal-monogram" aria-hidden="true">
+                                <b data-first-initial>N</b>
+                                <span>&amp;</span>
+                                <b data-second-initial>S</b>
+                            </span>
+                            <span class="seal-caption" aria-hidden="true">OPEN</span>
+                        </button>
+                    </div>
+                    <p class="form-error" id="form-error" role="alert"></p>
+                    <p class="opening-status" id="opening-status" role="status" aria-live="polite"></p>
+                </form>
+                <p class="welcome-signoff">The celebration begins with us, but becomes complete with you.</p>
+            </section>
+            <section class="portal" id="portal" hidden>
+                <audio id="invitation-music" src="./assets/love-is-a-waste-of-time.mp3" preload="none" loop></audio>
+                <button id="music-toggle" class="music-toggle" type="button" aria-label="Play background music" aria-pressed="false" title="Play background music">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                        <path d="M9 18V5l11-2v13M9 8l11-2"/>
+                        <ellipse cx="6" cy="18" rx="3" ry="2"/>
+                        <ellipse cx="17" cy="16" rx="3" ry="2"/>
+                        <path class="music-off" d="M3 3l18 18"/>
+                    </svg>
+                </button>
+                <nav class="portal-nav" aria-label="Wedding invitation navigation">
+                    <a class="brand" href="#invitation" aria-label="Nidhi and Sagar invitation">
+                        <img class="brand-monogram" src="./assets/ns-leaf-monogram.webp" width="76" height="76" alt="Nidhi &amp; Sagar"/>
+                        <img class="brand-sagar-monogram" src="./assets/sn-leaf-monogram.png" width="76" height="76" alt="Sagar &amp; Nidhi"/>
+                    </a>
+                    <div class="header-story" role="img" aria-label="Nidhi and Sagar grow from babies to a couple as you scroll">
+                        <div class="story-frames" aria-hidden="true"></div>
+                    </div>
+                </nav>
+                <section class="invitation" id="invitation" aria-labelledby="invitation-title">
+                    <div class="invitation-copy">
+                        <p class="eyebrow">WITH LOVE AND THE BLESSINGS OF OUR FAMILIES</p>
+                        <p class="personal-line">We heartily invite</p>
+                        <h2 id="guest-greeting" tabindex="-1">
+                            <span id="guest-display">You</span>
+                            <small>& Family</small>
+                        </h2>
+                        <p class="invite-message">to share in the joy of a new beginning, surrounded by the love and blessings of those dearest to us.</p>
+                        <div class="couple-name" id="invitation-title" data-couple-name-group>
+                            <span>Nidhi</span>
+                            <i>&</i>
+                            <span>Sagar</span>
+                        </div>
+                        <div class="family-introduction" aria-label="Family introductions">
+                            <article data-family="nidhi">
+                                <p class="family-name">Nidhi Kadam</p>
+                                <p>
+                                    <span>Daughter of</span>Neha &amp;Dinesh Kadam
+                                </p>
+                                <p>
+                                    <span>Niece of</span>Jyoti &amp;Shailesh Kadam<br/>Pranali &amp;Rahul Kadam
+                                </p>
+                            </article>
+                            <span class="family-divider" aria-hidden="true"></span>
+                            <article data-family="sagar">
+                                <p class="family-name">Sagar Modale</p>
+                                <p>
+                                    <span>Son of</span>Mahananda &amp;Ramesh Modale
+                                </p>
+                                <p>
+                                    <span>Nephew of</span>Ram Modale<br/>Sandhya &amp;Gangadhar Modale
+                                </p>
+                            </article>
+                        </div>
+                        <div class="event-summary">
+                            <div>
+                                <span>When</span>
+                                <strong>13 December 2026</strong>
+                            </div>
+                            <div>
+                                <span>Where</span>
+                                <strong>Trilok Singh Jabinda, Ch. Sambhaji Nagar</strong>
+                            </div>
+                        </div>
+                        <div class="hero-actions">
+                            <a class="primary-link" href="https://www.google.com/maps/search/?api=1&query=Trilok+Singh+Jabinda+Chhatrapati+Sambhaji+Nagar" target="_blank" rel="noreferrer">Open venue map</a>
+                            <a class="secondary-link" href="#details">View celebration dates</a>
+                        </div>
+                    </div>
+                    <figure class="art-card">
+                        <img src="./assets/invitation-hero-v2.png" alt="Illustrated portrait of Nidhi and Sagar walking through a moonlit garden"/>
+                    </figure>
+                </section>
+                <section class="journey" id="journey" aria-labelledby="journey-title">
+                    <div class="journey-scene">
+                        <picture class="journey-backdrop-picture">
+                            <source media="(max-width: 700px)" srcset="./assets/bodhi-grove-mobile-buddha-detailed.webp"/>
+                            <img class="journey-backdrop" src="./assets/bodhi-grove-centered.webp" alt="A moonlit ceremonial garden with Buddha seated on a lotus upon the raised stone platform"/>
+                        </picture>
+                        <div class="journey-shade" aria-hidden="true"></div>
+                        <div class="journey-heading">
+                            <h2 id="journey-title">Somewhere between hello and forever…</h2>
+                        </div>
+                        <div class="journey-stage" aria-hidden="true">
+                            <span class="ground-shadow shadow-sagar"></span>
+                            <span class="ground-shadow shadow-nidhi"></span>
+                            <span class="ground-shadow shadow-together"></span>
+                            <img class="journey-person journey-sagar" src="./assets/sagar-front.webp" alt=""/>
+                            <img class="journey-person journey-nidhi" src="./assets/nidhi-front.webp" alt=""/>
+                            <img class="journey-together" src="./assets/together-front.webp" alt=""/>
+                        </div>
+                        <div class="journey-words" aria-live="polite">
+                            <p class="journey-word word-one">Two lives found their rhythm.</p>
+                            <p class="journey-word word-two">Two families found their joy.</p>
+                            <div class="journey-word word-three">
+                                <span>And now, our forever begins.</span>
+                                <strong>Hand in hand.</strong>
+                            </div>
+                        </div>
+                        <div class="journey-progress" aria-hidden="true">
+                            <span></span>
+                        </div>
+                    </div>
+                </section>
+                <section class="celebrations" id="details" aria-label="Our wedding countdown and celebrations">
+                    <div class="wedding-countdown" aria-labelledby="countdown-title">
+                        <p class="eyebrow">SAVE THE DATES</p>
+                        <span class="countdown-lotus" aria-hidden="true">
+                            <svg width="42" height="28" viewBox="0 0 42 28" fill="none" stroke="currentColor" stroke-width="1.2">
+                                <path d="M21 25C11 16 16 7 21 2C26 7 31 16 21 25ZM21 25C9 25 3 15 4 9C13 10 19 16 21 25ZM21 25C33 25 39 15 38 9C29 10 23 16 21 25ZM21 25C13 22 10 13 12 6C18 10 21 17 21 25ZM21 25C29 22 32 13 30 6C24 10 21 17 21 25Z"/>
+                            </svg>
+                        </span>
+                        <h2 id="countdown-title">Counting down to forever</h2>
+                        <div class="countdown-units" role="timer" aria-label="Time until our wedding" aria-live="off">
+                            <div>
+                                <strong id="countdown-days">00</strong>
+                                <span>Days</span>
+                            </div>
+                            <div>
+                                <strong id="countdown-hours">00</strong>
+                                <span>Hours</span>
+                            </div>
+                            <div>
+                                <strong id="countdown-minutes">00</strong>
+                                <span>Minutes</span>
+                            </div>
+                            <div>
+                                <strong id="countdown-seconds">00</strong>
+                                <span>Seconds</span>
+                            </div>
+                        </div>
+                        <p class="countdown-date">
+                            <time datetime="2026-12-13T17:00:00+05:30">13 December 2026 · 5:00 PM</time>
+                            <span>Ch. Sambhaji Nagar</span>
+                        </p>
+                        <p id="countdown-celebrate" hidden>Our forever begins today.</p>
+                    </div>
+                    <div class="event-book" aria-label="Celebration dates, presented as a book">
+                        <div class="book-stage" id="event-book">
+                            <ol class="book-spreads" id="book-spreads">
+                                <li class="book-spread" aria-label="Page 1 of 4: Nidhi and Sagar's Haldi celebrations">
+                                    <article class="book-page book-page-left book-page-haldi">
+                                        <p class="book-chapter">CHAPTER ONE</p>
+                                        <span class="page-lotus" aria-hidden="true">
+                                            <svg width="42" height="28" viewBox="0 0 42 28" fill="none" stroke="currentColor" stroke-width="1.2">
+                                                <path d="M21 25C11 16 16 7 21 2C26 7 31 16 21 25ZM21 25C9 25 3 15 4 9C13 10 19 16 21 25ZM21 25C33 25 39 15 38 9C29 10 23 16 21 25ZM21 25C13 22 10 13 12 6C18 10 21 17 21 25ZM21 25C29 22 32 13 30 6C24 10 21 17 21 25Z"/>
+                                            </svg>
+                                        </span>
+                                        <h3>Haldi</h3>
+                                        <p>Two homes, one golden celebration.</p>
+                                        <div class="haldi-schedules" aria-label="Haldi celebration details">
+                                            <section>
+                                                <h4>Nidhi's Haldi</h4>
+                                                <time datetime="2026-12-09T18:00">9 December 2026</time>
+                                                <p>
+                                                    <strong>6:00 PM</strong>
+                                                    <span aria-hidden="true"> · </span>Mumbai
+                                                </p>
+                                            </section>
+                                            <section>
+                                                <h4>Sagar's Haldi</h4>
+                                                <time datetime="2026-12-11T18:00">11 December 2026</time>
+                                                <p>
+                                                    <strong>6:00 PM</strong>
+                                                    <span aria-hidden="true"> · </span>Ch. Sambhaji Nagar
+                                                </p>
+                                            </section>
+                                        </div>
+                                    </article>
+                                    <figure class="book-page book-page-right haldi-photo">
+                                        <span class="page-lotus" aria-hidden="true">
+                                            <svg width="42" height="28" viewBox="0 0 42 28" fill="none" stroke="currentColor" stroke-width="1.2">
+                                                <path d="M21 25C11 16 16 7 21 2C26 7 31 16 21 25ZM21 25C9 25 3 15 4 9C13 10 19 16 21 25ZM21 25C33 25 39 15 38 9C29 10 23 16 21 25ZM21 25C13 22 10 13 12 6C18 10 21 17 21 25ZM21 25C29 22 32 13 30 6C24 10 21 17 21 25Z"/>
+                                            </svg>
+                                        </span>
+                                        <div class="book-photo-mat">
+                                            <img src="./assets/haldi-photo-v2.webp" loading="eager" alt="Nidhi and Sagar smiling together during their Haldi celebration"/>
+                                        </div>
+                                        <span class="page-lotus" aria-hidden="true">
+                                            <svg width="42" height="28" viewBox="0 0 42 28" fill="none" stroke="currentColor" stroke-width="1.2">
+                                                <path d="M21 25C11 16 16 7 21 2C26 7 31 16 21 25ZM21 25C9 25 3 15 4 9C13 10 19 16 21 25ZM21 25C33 25 39 15 38 9C29 10 23 16 21 25ZM21 25C13 22 10 13 12 6C18 10 21 17 21 25ZM21 25C29 22 32 13 30 6C24 10 21 17 21 25Z"/>
+                                            </svg>
+                                        </span>
+                                    </figure>
+                                </li>
+                                <li class="book-spread" aria-label="Page 2 of 4: Sangeet and Engagement" hidden>
+                                    <article class="book-page book-page-left">
+                                        <p class="book-chapter">CHAPTER TWO</p>
+                                        <span class="page-lotus" aria-hidden="true">
+                                            <svg width="42" height="28" viewBox="0 0 42 28" fill="none" stroke="currentColor" stroke-width="1.2">
+                                                <path d="M21 25C11 16 16 7 21 2C26 7 31 16 21 25ZM21 25C9 25 3 15 4 9C13 10 19 16 21 25ZM21 25C33 25 39 15 38 9C29 10 23 16 21 25ZM21 25C13 22 10 13 12 6C18 10 21 17 21 25ZM21 25C29 22 32 13 30 6C24 10 21 17 21 25Z"/>
+                                            </svg>
+                                        </span>
+                                        <time datetime="2026-12-12T17:00">
+                                            12 December 2026<span class="book-time">5:00 PM</span>
+                                        </time>
+                                        <h3>Sangeet &amp; Engagement</h3>
+                                        <p>An evening of music, promises and celebration.</p>
+                                        <span class="book-detail">
+                                            Trilok Singh Jabinda,<br/>Ch. Sambhaji Nagar
+                                        </span>
+                                    </article>
+                                    <figure class="book-page book-page-right engagement-photo">
+                                        <span class="page-lotus" aria-hidden="true">
+                                            <svg width="42" height="28" viewBox="0 0 42 28" fill="none" stroke="currentColor" stroke-width="1.2">
+                                                <path d="M21 25C11 16 16 7 21 2C26 7 31 16 21 25ZM21 25C9 25 3 15 4 9C13 10 19 16 21 25ZM21 25C33 25 39 15 38 9C29 10 23 16 21 25ZM21 25C13 22 10 13 12 6C18 10 21 17 21 25ZM21 25C29 22 32 13 30 6C24 10 21 17 21 25Z"/>
+                                            </svg>
+                                        </span>
+                                        <div class="book-photo-mat">
+                                            <img src="./assets/engagement-family.webp" loading="lazy" alt="Nidhi and Sagar celebrating their engagement with their family"/>
+                                        </div>
+                                        <span class="page-lotus" aria-hidden="true">
+                                            <svg width="42" height="28" viewBox="0 0 42 28" fill="none" stroke="currentColor" stroke-width="1.2">
+                                                <path d="M21 25C11 16 16 7 21 2C26 7 31 16 21 25ZM21 25C9 25 3 15 4 9C13 10 19 16 21 25ZM21 25C33 25 39 15 38 9C29 10 23 16 21 25ZM21 25C13 22 10 13 12 6C18 10 21 17 21 25ZM21 25C29 22 32 13 30 6C24 10 21 17 21 25Z"/>
+                                            </svg>
+                                        </span>
+                                    </figure>
+                                </li>
+                                <li class="book-spread" aria-label="Page 3 of 4: The Wedding" hidden>
+                                    <article class="book-page book-page-left">
+                                        <p class="book-chapter">CHAPTER THREE</p>
+                                        <span class="page-lotus" aria-hidden="true">
+                                            <svg width="42" height="28" viewBox="0 0 42 28" fill="none" stroke="currentColor" stroke-width="1.2">
+                                                <path d="M21 25C11 16 16 7 21 2C26 7 31 16 21 25ZM21 25C9 25 3 15 4 9C13 10 19 16 21 25ZM21 25C33 25 39 15 38 9C29 10 23 16 21 25ZM21 25C13 22 10 13 12 6C18 10 21 17 21 25ZM21 25C29 22 32 13 30 6C24 10 21 17 21 25Z"/>
+                                            </svg>
+                                        </span>
+                                        <time datetime="2026-12-13T17:00">
+                                            13 December 2026<span class="book-time">5:00 PM</span>
+                                        </time>
+                                        <h3>The Wedding</h3>
+                                        <p>The day we begin our forever, with your blessings.</p>
+                                        <span class="book-detail">
+                                            Trilok Singh Jabinda,<br/>Ch. Sambhaji Nagar
+                                        </span>
+                                    </article>
+                                    <figure class="book-page book-page-right wedding-photo">
+                                        <span class="page-lotus" aria-hidden="true">
+                                            <svg width="42" height="28" viewBox="0 0 42 28" fill="none" stroke="currentColor" stroke-width="1.2">
+                                                <path d="M21 25C11 16 16 7 21 2C26 7 31 16 21 25ZM21 25C9 25 3 15 4 9C13 10 19 16 21 25ZM21 25C33 25 39 15 38 9C29 10 23 16 21 25ZM21 25C13 22 10 13 12 6C18 10 21 17 21 25ZM21 25C29 22 32 13 30 6C24 10 21 17 21 25Z"/>
+                                            </svg>
+                                        </span>
+                                        <div class="book-photo-mat">
+                                            <img src="./assets/wedding-portrait-retouched.webp" loading="lazy" width="1025" height="1535" alt="Nidhi and Sagar together in a garden"/>
+                                        </div>
+                                        <span class="page-lotus" aria-hidden="true">
+                                            <svg width="42" height="28" viewBox="0 0 42 28" fill="none" stroke="currentColor" stroke-width="1.2">
+                                                <path d="M21 25C11 16 16 7 21 2C26 7 31 16 21 25ZM21 25C9 25 3 15 4 9C13 10 19 16 21 25ZM21 25C33 25 39 15 38 9C29 10 23 16 21 25ZM21 25C13 22 10 13 12 6C18 10 21 17 21 25ZM21 25C29 22 32 13 30 6C24 10 21 17 21 25Z"/>
+                                            </svg>
+                                        </span>
+                                    </figure>
+                                </li>
+                                <li class="book-spread" aria-label="Page 4 of 4: Reception" hidden>
+                                    <article class="book-page book-page-left">
+                                        <p class="book-chapter">CHAPTER FOUR</p>
+                                        <span class="page-lotus" aria-hidden="true">
+                                            <svg width="42" height="28" viewBox="0 0 42 28" fill="none" stroke="currentColor" stroke-width="1.2">
+                                                <path d="M21 25C11 16 16 7 21 2C26 7 31 16 21 25ZM21 25C9 25 3 15 4 9C13 10 19 16 21 25ZM21 25C33 25 39 15 38 9C29 10 23 16 21 25ZM21 25C13 22 10 13 12 6C18 10 21 17 21 25ZM21 25C29 22 32 13 30 6C24 10 21 17 21 25Z"/>
+                                            </svg>
+                                        </span>
+                                        <time datetime="2026-12-13T20:00">
+                                            13 December 2026<span class="book-time">8:00 PM</span>
+                                        </time>
+                                        <h3>Reception</h3>
+                                        <p>A joyful evening with everyone who makes our lives special.</p>
+                                        <span class="book-detail">
+                                            Trilok Singh Jabinda,<br/>Ch. Sambhaji Nagar
+                                        </span>
+                                    </article>
+                                    <figure class="book-page book-page-right reception-photo">
+                                        <span class="page-lotus" aria-hidden="true">
+                                            <svg width="42" height="28" viewBox="0 0 42 28" fill="none" stroke="currentColor" stroke-width="1.2">
+                                                <path d="M21 25C11 16 16 7 21 2C26 7 31 16 21 25ZM21 25C9 25 3 15 4 9C13 10 19 16 21 25ZM21 25C33 25 39 15 38 9C29 10 23 16 21 25ZM21 25C13 22 10 13 12 6C18 10 21 17 21 25ZM21 25C29 22 32 13 30 6C24 10 21 17 21 25Z"/>
+                                            </svg>
+                                        </span>
+                                        <div class="book-photo-mat">
+                                            <img src="./assets/reception-photo-v2.webp" loading="lazy" alt="Nidhi and Sagar smiling together at their reception"/>
+                                        </div>
+                                        <span class="page-lotus" aria-hidden="true">
+                                            <svg width="42" height="28" viewBox="0 0 42 28" fill="none" stroke="currentColor" stroke-width="1.2">
+                                                <path d="M21 25C11 16 16 7 21 2C26 7 31 16 21 25ZM21 25C9 25 3 15 4 9C13 10 19 16 21 25ZM21 25C33 25 39 15 38 9C29 10 23 16 21 25ZM21 25C13 22 10 13 12 6C18 10 21 17 21 25ZM21 25C29 22 32 13 30 6C24 10 21 17 21 25Z"/>
+                                            </svg>
+                                        </span>
+                                    </figure>
+                                </li>
+                            </ol>
+                            <div class="book-cover" id="book-cover">
+                                <div class="book-cover-face cover-front">
+                                    <button id="open-book" type="button" aria-label="Open The Days We Gather">
+                                        <img class="book-cover-art" src="./assets/celebration-book-realistic.webp" alt="Nidhi &amp; Sagar — The Days We Gather — December 2026. Gold leaf and ornamental gold border on emerald cloth." width="1127" height="1361"/>
+                                    </button>
+                                </div>
+                                <div class="book-cover-face cover-back" aria-hidden="true"></div>
+                            </div>
+                            <div class="book-end-cover" id="book-end-cover" hidden>
+                                <button id="reopen-book" type="button" aria-label="Open the book again at Reception">
+                                    <span class="back-cover-kicker">A NOTE FROM OUR FAMILIES</span>
+                                    <span class="back-cover-rule" aria-hidden="true"></span>
+                                    <strong>Until we celebrate together</strong>
+                                    <span class="back-cover-message">Thank you for being part of our story. We cannot wait to share these days with you, surrounded by your love and blessings.</span>
+                                    <span class="back-cover-signature">
+                                        With love,<br/>from the Modale &amp;Kadam families
+                                    </span>
+                                    <span class="back-cover-prompt">TAP TO REVISIT</span>
+                                </button>
+                            </div>
+                            <button class="book-page-hit book-page-hit-prev" id="book-prev" type="button" aria-controls="book-spreads" aria-label="Turn to the previous celebration" hidden></button>
+                            <button class="book-page-hit book-page-hit-next" id="book-next" type="button" aria-controls="book-spreads" aria-label="Turn to the next celebration" hidden></button>
+                        </div>
+                        <p class="book-hint" id="book-hint">Swipe left or tap the cover to open</p>
+                        <span class="visually-hidden" id="book-count" role="status" aria-live="polite" aria-atomic="true">Book closed</span>
+                    </div>
+                    <p class="timeline-signoff">The dates are ours. The celebration becomes complete with you.</p>
+                </section>
+                <section class="closing" aria-label="Closing invitation message">
+                    <div class="closing-mark" aria-hidden="true">
+                        <img src="./assets/dhamma-buddha-wheel.png" alt="" width="240" height="240" loading="lazy"/>
+                    </div>
+                    <p>
+                        Our happiest days will be even more meaningful<br/>when shared with the people we cherish.
+                    </p>
+                    <h2>Your presence would mean the world to us.</h2>
+                    <span data-closing-couple>With love, Nidhi &amp; Sagar</span>
+                </section>
+                <footer>
+                    <span data-footer-couple>Nidhi &amp; Sagar • 13 December 2026</span>
+                    <button id="back-to-top" type="button">Back to top ↑</button>
+                </footer>
+            </section>
+            <div id="bodhi-shower" class="bodhi-shower" aria-hidden="true"></div>
+            <div class="toast" id="toast" role="status" aria-live="polite">Personalized link copied</div>
+        </main>
+        <script src="./script.js?v=37"></script>
+        <script src="./header-story.js?v=1"></script>
+    </body>
+</html>
