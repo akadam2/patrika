@@ -492,43 +492,23 @@ html { scroll-padding-top: calc(var(--nav-height) + 16px); }
 .event-book { width: min(1050px, 100%); margin: 44px auto 0; }
 .book-stage { position: relative; perspective: 1600px; touch-action: pan-y; }
 .book-spreads {
-  position: relative;
-  isolation: isolate;
-  perspective: 1600px;
-  list-style: none;
-  margin: 0;
   padding: 10px;
-  border: 1px solid #d9b76599;
-  border-radius: 12px 20px 20px 12px;
-  background: linear-gradient(90deg, #7c5b30, #d4b678 2%, #ad8a4f 98%, #795b35);
-  box-shadow: 0 30px 70px #0009, 0 5px 0 #d2c19c, 0 10px 0 #776343;
-  touch-action: pan-y;
-  visibility: hidden;
-  opacity: 0;
 }
 .event-book.is-opening .book-spreads,
 .event-book.is-open .book-spreads { visibility: visible; opacity: 1; }
 .event-book.is-opening .book-spreads { transition: opacity .18s .23s; }
-.book-spreads::after {
-  content: '';
-  position: absolute;
-  z-index: 3;
-  top: 10px;
-  bottom: 10px;
-  left: calc(50% - 10px);
-  width: 20px;
-  pointer-events: none;
-  background: linear-gradient(90deg, #513f3180, transparent 40%, #513f315e);
-}
 .book-spread {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   min-height: clamp(430px, 50vw, 540px);
   overflow: hidden;
-  border-radius: 5px 10px 10px 5px;
-  background: #f7efdf;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #d9b76599;
+  border-radius: 12px 20px 20px 12px;
+  background: linear-gradient(90deg, #7c5b30, #d4b678 2%, #ad8a4f 98%, #795b35);
+  box-shadow: 0 30px 70px #0009, 0 5px 0 #d2c19c, 0 10px 0 #776343;
 }
-.book-spread[hidden] { display: none; }
 .book-page { min-width: 0; min-height: 0; }
 .book-page-left {
   display: flex;
