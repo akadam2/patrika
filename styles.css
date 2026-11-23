@@ -1103,12 +1103,12 @@ html { scroll-padding-top: calc(var(--nav-height) + 16px); }
 .event-book {
   position: relative;
   /* Adjust height if you want more or less scroll distance per page */
-  min-height: 360vh;
+  /* min-height: 360vh; */
 }
 
 .event-book .book-stage,
 .event-book .book-hint {
-  position: sticky;
+  /* position: sticky; */
   top: clamp(72px, 16vh, 140px);
   z-index: 2;
 }
