@@ -1429,7 +1429,7 @@ html {
 }
 
 .celebrations {
-  padding: clamp(70px, 9vw, 130px) clamp(20px, 6vw, 88px);
+  padding: clamp(40px, 9vw, 130px) clamp(20px, 6vw, 88px);
   color: var(--ink);
   background: radial-gradient(ellipse at 90% 30%, #14534566, transparent 50%), linear-gradient(#06161b, #082b35 35%, #082d2b);
 }
@@ -2389,7 +2389,7 @@ html {
 
   .book-detail {
     padding-top: 10px;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.3;
   }
 
@@ -3133,7 +3133,7 @@ html {
 
 @media (max-width: 700px) {
   .book-page-left {
-    padding: 28px clamp(16px, 4vw, 24px);
+    padding: 40px clamp(16px, 4vw, 24px);
   }
 
   .book-page-left>p:not(.book-chapter) {
